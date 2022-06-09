@@ -1,0 +1,13 @@
+ul{
+    li{
+        line-height: 2;
+        color: #619f7b;
+        a{
+            color: #619f7b;
+            text-decoration: none;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+}

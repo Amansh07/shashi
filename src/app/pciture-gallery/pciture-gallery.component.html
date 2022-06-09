@@ -1,0 +1,11 @@
+
+<div class="container my-5" *ngIf="galleryData !=null">
+    <div class="row mx-0">
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 mb-3" *ngFor="let content of galleryData">
+            <img src="{{content.galleryData}}" alt="">
+            <p class="text-center mt-2">{{content.description}}</p>
+        </div>
+        
+    </div>
+</div>
+<!-- footer section -->

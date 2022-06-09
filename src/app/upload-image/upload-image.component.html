@@ -1,0 +1,26 @@
+<div class="container mt-5">
+    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mx-auto mb-4">
+        <div class="mb-3">
+          <label class="label-control">Category</label>
+          <div class="form-group w-100 pr-5">
+            <select class="form-control time-dropdown select_box" [(ngModel)]="category">
+                <option value="hand_knotted">Hand Knotted</option>
+                <option value="natural_hand_notted">Natural Hand Notted</option>
+                <option value="pet_loom_durry">Pet Loom Durry</option>
+                <option value="fur_ployester">Fur Ployester</option>
+                <option value="kilim_durry">Kilim Durry</option>
+            </select>
+        </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="">Description</label>
+          <textarea type="password" class="form-control" id="exampleInputPassword1" [(ngModel)]="description"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="formFile" class="">Upload File</label>
+            <input class="form-control" type="file" id="formFile" (change)="onFileChanged($event)">
+          </div>
+        <button type="submit" class="btn btn-primary" (click)="uploadImage()">Upload Now</button>
+     
+    </div>
+</div>
